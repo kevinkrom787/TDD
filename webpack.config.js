@@ -12,17 +12,17 @@ module.exports = {
   },
   module: {
     loaders: [{
-        test: /\.css$/,
-        exclude: /node_modules/,
-        loader: "style-loader!css-loader"
-      },
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015']
-        }
+      test: /\.css$/,
+      exclude: /node_modules/,
+      loader: "style-loader!css-loader"
+    },
+    {
+      test: /\.js$/,
+      loader: 'babel-loader',
+      query: {
+        presets: ['es2015']
       }
+    }
     ]
   },
   resolve: {
